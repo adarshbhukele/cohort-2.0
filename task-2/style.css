@@ -1,0 +1,56 @@
+@font-face {
+  font-family: gang bangers;
+  src: url("images/Gang Bangers.ttf");
+}
+@font-face {
+  font-family: spiderman;
+  src: url("images/The Amazing Spider-Man.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  background: url("/images/spiderman background2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+main h1 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: "spiderman", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  padding: 0 20px;
+  opacity: 1;
+}
+main img {
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 800px;
+  width: auto;
+  opacity: 1;
+  cursor: pointer;
+}
+main img:hover {
+  transform: translate(-50%, -50%) scale(1.5);
+  transition: all 0.8s ease-in-out;
+}/*# sourceMappingURL=style.css.map */
