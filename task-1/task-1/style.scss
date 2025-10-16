@@ -1,0 +1,210 @@
+@font-face {
+    font-family: simple;
+    src: url(KGPerfectPenmanship.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: simple;
+}
+
+@mixin heading {
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+header {
+    height: 200px;
+    width: 100%;
+    background-color: rgb(9, 6, 63);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+
+    h1 {
+        @include heading();
+    }
+
+    p {
+        font-style: italic;
+        font-size: 20px;
+    }
+}
+
+main {
+    background-color: rgb(248, 241, 241);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+
+    .section_1 {
+        height: 300px;
+        width: 80%;
+        background-color: #daffe4;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 20px;
+        align-items: center;
+        border-radius: 15px;
+        padding: 30px;
+        text-align: center;
+        margin-top: 50px;
+
+        h1 {
+            @include heading();
+        }
+
+        p {
+            font-size: 25px;
+            width: 80%;
+            height: 40%;
+            padding-top: 10px;
+            background-color: white;
+        }
+
+    }
+
+    .section_2 {
+        height: 320px;
+        width: 80%;
+        background-color: #eae4fd;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+        border-radius: 15px;
+        padding: 30px;
+        text-align: center;
+
+        h1 {
+            @include heading();
+        }
+
+        p {
+            font-size: 25px;
+            width: 70%;
+            height: 25%;
+            padding-top: 15px;
+            background-color: white;
+        }
+
+    }
+
+    .section_3 {
+        height: 400px;
+        width: 80%;
+        background-color: #fdf2c1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+        border-radius: 15px;
+        padding: 30px;
+        text-align: center;
+
+        h1 {
+            @include heading();
+        }
+        p {
+            font-size: 25px;
+            width: 70%;
+            height: 25%;
+            padding-top: 15px;
+            background-color: white;
+        }
+
+    }
+
+
+    .section_4 {
+        height: 380px;
+        width: 80%;
+        background-color: #dcf1ff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+        border-radius: 15px;
+        padding: 30px;
+        text-align: center;
+
+        h1 {
+            @include heading();
+        }
+
+        p {
+            font-size: 25px;
+            width: 70%;
+            height: 25%;
+            padding-top: 17px;
+            background-color: white;
+        }
+
+
+    }
+
+
+    .section_5 {
+        height: 380px;
+        width: 80%;
+        background-color: paleturquoise;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+        border-radius: 15px;
+        padding: 30px;
+        text-align: center;
+        margin-bottom: 50px;
+
+        h1 {
+            @include heading();
+        }
+
+        p {
+            font-size: 25px;
+            width: 70%;
+            height: 40%;
+            padding-top: 17px;
+            background-color: white;
+        }
+
+
+    }
+
+}
+
+footer{
+        height: 100px;
+        width: 100%;
+        background-color: rgb(9, 6, 63);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+        align-items: center;
+        
+        p {
+            font-size: 20px;
+        }
+    }
